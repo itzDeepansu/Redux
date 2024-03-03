@@ -19,3 +19,5 @@
 
 - we use useSelector to target the state of reducers 
 it can be used as ```const todos = useSelector((state) => state.todos);```
+
+- at last add provider blocks to the main.jsx file giving store={store}
