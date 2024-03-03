@@ -10,8 +10,8 @@
 - import methods named createSlice and nanoid(optional-used to generate random unique id)
 
 - create inital state
-- export slice by making it using createSlice
-- export reducers individually using todoSlice.actions
+- export slice by making it using createSlice (everyslice takes 3 values , (name:,initialState,reducers:{}))
+- export reducers individually using todoSlice.actions (export const {addTodo ,removeTodo}=todoSLice.actions )
 - export default todoSlice.reducer
 - import todoReducer in store and then pass key value of (reducer:todoReducer) to the configure store
 
@@ -20,4 +20,4 @@
 - we use useSelector to target the state of reducers 
 it can be used as ```const todos = useSelector((state) => state.todos);```
 
-- at last add provider blocks to the main.jsx file giving store={store}
+-at last add provider blocks to the main.jsx file giving store={store}
